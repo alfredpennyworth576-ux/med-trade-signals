@@ -1,10 +1,39 @@
 # Med-Trade-Signals Requirements
+
+# Core
 requests>=2.31.0
 python-dateutil>=2.8.2
+python-dotenv>=1.0.0
 
-# Optional: For enhanced NLP (comment out if not using OpenAI)
-# openai>=1.0.0
+# NLP & ML
+openai>=1.0.0  # Optional: for advanced NLP
+spacy>=3.7.0  # Optional: for NER
+# spacy model: python -m spacy download en_core_web_sm
 
-# For development/testing
+# API Clients
+# praw>=7.7.0  # Reddit API (optional)
+
+# Web Framework
+flask>=3.0.0
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Testing
 pytest>=7.4.0
 pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+responses>=0.23.0  # Mock HTTP responses
+freezegun>=1.2.0  # Mock time
+
+# Development
+black>=23.0.0
+flake8>=6.1.0
+mypy>=1.5.0
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Optional: Enhanced collectors
+# twython>=3.9.0  # Twitter API (optional)
+# sec-edgar-downloader>=5.0.0  # SEC filings (optional)
