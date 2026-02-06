@@ -1,0 +1,10 @@
+# Med-Trade-Signals Requirements
+requests>=2.31.0
+python-dateutil>=2.8.2
+
+# Optional: For enhanced NLP (comment out if not using OpenAI)
+# openai>=1.0.0
+
+# For development/testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
